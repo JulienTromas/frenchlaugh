@@ -1,0 +1,37 @@
+{
+  "name": "frenchlaugh",
+  "homepage": "https://github.com/JulienTromas/frenchlaugh",
+  "version": "2.0.1",
+  "description": "A nice little package to make your code laugh like a French man from an old American movie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "pre-commit": "pretty-quick --staged --no-restage",
+    "pre-push": " npm run test",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "preversion": "npm test",
+    "postversion": "git push origin --tags --no-verify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/JulienTromas/frenchlaugh.git"
+  },
+  "author": "julientromas",
+  "license": "MIT",
+  "keywords": [
+    "frenchlaugh",
+    "npm",
+    "package",
+    "julientromas"
+  ],
+  "dependencies": {
+    "chai": "^4.2.0",
+    "husky": "^4.3.5",
+    "mocha": "^8.2.1",
+    "node": "^15.3.0",
+    "pinst": "^2.1.1",
+    "prettier": "^2.2.1"
+  }
+}
