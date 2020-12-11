@@ -1,6 +1,6 @@
 {
   "name": "frenchlaugh",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A nice little package to make your code laugh like a French man from an old American movie.",
   "main": "index.js",
   "scripts": {
