@@ -7,7 +7,7 @@
     "test": "mocha ./tests/frenchlaugh.test.js",
     "pre-commit": "pretty-quick --staged --no-restage",
     "pre-push": " npm run test",
-    "postinstall": "husky install",
+    "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "preversion": "npm test",
